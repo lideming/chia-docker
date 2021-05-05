@@ -2,7 +2,7 @@
 
 ## Get the Docker Image
 
-### Pull from Docker Hub
+### Pull from Docker Hub [![Docker Image Size (tag)](https://img.shields.io/docker/image-size/yuuza/chia/latest?label=yuuza%2Fchia%3Alatest)](https://hub.docker.com/r/yuuza/chia)
 
 ```shell
 docker pull yuuza/chia
