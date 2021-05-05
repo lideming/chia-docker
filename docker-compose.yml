@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+    chia:
+        image: yuuza/chia
+        volumes:
+            - ${CHIA_ROOT:-~/.chia}:/root/.chia/
+            - ${PLOTS_TMP_DIR?}:/plots-tmp
+            - ${PLOTS_FINAL_DIR?}:/plots-final
+            - ${CHIA_KEYRING_ROOT:-~/.local/share/python_keyring/}:/root/.local/share/python_keyring/
+        entrypoint: bash
